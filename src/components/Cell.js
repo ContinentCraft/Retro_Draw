@@ -1,4 +1,5 @@
 import React from 'react';
+import { COLORS } from '../utils';
 
 /**
  * The Cell component represents the fundamental "clickable object" in
@@ -27,7 +28,9 @@ const Cell = (props) => {
    * - set the onClick property to be equal to the handleClick function
    *    passed in with the props
    */
-  return <div className={isActive}></div>
+  return <div className={isActive}  style= {{backgroundColor: color}}>
+
+  </div>
 }
 
 export default Cell;
