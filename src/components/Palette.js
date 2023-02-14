@@ -13,12 +13,8 @@ const Palette = (props) => {
   /**
    * Create constants for activeColor and setActiveColor, reading the value off of the props
    */
-  const activeColor = props.value
+  const activeColor = ''
   const setActiveColor = props.value
-  
-  
-
-  
 
   /**
    * For the template, you need to:
@@ -31,7 +27,9 @@ const Palette = (props) => {
    *      the color from the map
    */
   return <div className="palette">
-    <div></div>
+    {COLORS.map(function(e,idx){
+      return <Cell />
+    })}
   </div>
 }
 
