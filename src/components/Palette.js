@@ -13,6 +13,8 @@ const Palette = (props) => {
   /**
    * Create constants for activeColor and setActiveColor, reading the value off of the props
    */
+  const activeColor = props.value
+  const setActiveColor = props.value
 
 
   /**
