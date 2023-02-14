@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 /* Need to build a blank cell list when user clicks CLEAR ALL */
 import { buildCellList } from '../utils';

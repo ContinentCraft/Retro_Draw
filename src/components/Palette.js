@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Cell from './Cell';
 
 /* Need to map over the COLORS array, so we pull them from ../utils */
@@ -13,8 +13,7 @@ const Palette = (props) => {
   /**
    * Create constants for activeColor and setActiveColor, reading the value off of the props
    */
-  const activeColor = 
-  const setActiveColor = 
+  const [activeColor, setActiveColor] = useState(COLORS[0])
 
   /**
    * For the template, you need to:
@@ -27,8 +26,8 @@ const Palette = (props) => {
    *      the color from the map
    */
   return <div className="palette">
-    {COLORS.map(function(elm,idx){
-      return <Cell color= "v" />
+    {COLORS.map(function(color,idx){
+      return <Cell color={activeColor}/>
     })}
   </div>
 }

@@ -13,11 +13,11 @@ import { COLORS } from '../utils';
 const Cell = (props) => {
   /* Create constants for color, isActive, and handleClick, reading the value off of props */
   const color = props.value
-  const isActive = color
+  // const isActive = props
 
-  async function handleClick(){
-    setActiveColor(color)
-  }
+  // async function handleClick(){
+  //   setActiveColor(color)
+  // }
 
   /**
    * For the template you need to
@@ -28,7 +28,7 @@ const Cell = (props) => {
    * - set the onClick property to be equal to the handleClick function
    *    passed in with the props
    */
-  return <div className={isActive}  style= {{backgroundColor: color}}>
+  return <div className="cell" style = {{backgroundColor: color}}>
 
   </div>
 }
