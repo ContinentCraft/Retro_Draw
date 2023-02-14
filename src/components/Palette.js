@@ -15,7 +15,10 @@ const Palette = (props) => {
    */
   const activeColor = props.value
   const setActiveColor = props.value
+  
+  
 
+  
 
   /**
    * For the template, you need to:
@@ -27,7 +30,9 @@ const Palette = (props) => {
    *    - has a prop of handleClick which is a function that calls setActiveColor, passing it 
    *      the color from the map
    */
-  return <div className="palette"></div>
+  return <div className="palette">
+    <div></div>
+  </div>
 }
 
 export default Palette;
